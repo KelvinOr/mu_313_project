@@ -55,7 +55,7 @@ class _MainPage extends State<MainPage> {
     final prefs = await SharedPreferences.getInstance();
     language = prefs.getString('language').toString();
     //檢查空值
-    if (language != null) {
+    if (language != "null") {
       setState(() {
         language = language;
       });
